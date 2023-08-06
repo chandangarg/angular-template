@@ -1,0 +1,21 @@
+.header-container {
+    width: 100%;
+}
+  
+  .sidenav-content {
+    display: inline-block;
+    width: 100%;
+    height: 80px;
+    background: #3f51b5
+    /* height: 100%;
+    align-items: center;
+    justify-content: center; */
+  }
+  
+  .sidenav {
+    padding: 20px;
+    color: #fff;
+    background: #3f51b5;
+    height: 100%;
+    display: flex;
+  }

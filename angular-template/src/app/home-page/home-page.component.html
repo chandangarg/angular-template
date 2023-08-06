@@ -1,0 +1,27 @@
+
+<div class="main-container courses-panel">
+
+    <div class="header">
+  
+      <h2 class="title">All Courses</h2>
+  
+      <button mat-mini-fab routerLink="/create-new-course">
+        <mat-icon class="add-course-btn">add</mat-icon>
+      </button>
+  
+    </div>
+    
+    <mat-tab-group mat-stretch-tabs="false" animationDuration="0ms">
+        <mat-tab label="Beginners">
+            <app-courses-card-list [courses]="beginnerCourses"></app-courses-card-list>
+        </mat-tab>
+
+        <mat-tab label="Advanced">
+            <app-courses-card-list [courses]="advancedCourses"></app-courses-card-list>
+        </mat-tab>
+
+    </mat-tab-group>
+  
+  </div>
+  
+  

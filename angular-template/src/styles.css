@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.main-container{
+    display: block;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+.footer{
+    margin-top:60px;
+    background: #673ab7;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.footer p{
+    margin:0;
+    height:17px;
+    font-size: 14px;
+}
+.footer p span{display: inline-block; float: left; line-height: 17px; font-size: 14px;}
+.footer p .mat-icon {display: inline-block; float: left; font-size: 18px}
+
+.leftDrawer{
+    background: #673ab7 !important;
+    color: #fff;
+    width: 250px;
+}
+.leftDrawer a, .leftDrawer a span{
+    color: #fff !important;
+}
+.leftDrawer a span span .mat-icon{
+    float: left;
+}
+.leftDrawer a span span span{
+    float: left;
+    line-height: 28px;
+    margin-left: 10px;
+}
+.closeSideNav{
+    text-align: center;
+}
+.leftDrawer a.closeSideNav span span .mat-icon{
+    float: none;
+}
+.mat-mdc-tab-label-container{
+    margin-bottom: 20px;;
+}

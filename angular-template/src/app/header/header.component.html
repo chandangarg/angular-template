@@ -1,0 +1,30 @@
+  <mat-sidenav-container fullscreen>
+
+    <mat-sidenav #sidenav>
+        <mat-nav-list (click)="sidenav.close()">
+            <a mat-list-item >
+                <mat-icon>library_books</mat-icon>
+                <span>Home</span>
+            </a>
+            <a mat-list-item >
+                <mat-icon>library_books</mat-icon>
+                <span>About</span>
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-toolbar color="primary">
+        <button (click)="sidenav.open()" mat-icon-button class="menu-icon" aria-label="icon-button with menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>Sample Project</span>
+        <span class="spacer"></span>
+        <button mat-icon-button class="favorite-icon" aria-label="icon-button with heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="share-icon" aria-label="icon-button with share icon">
+          <mat-icon>share</mat-icon>
+        </button>
+      </mat-toolbar>
+
+  </mat-sidenav-container>

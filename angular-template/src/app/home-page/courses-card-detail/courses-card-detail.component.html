@@ -1,0 +1,8 @@
+
+<div class="main-container courses-panel">
+    <div *ngFor="let item of course">
+        <h2>{{item.description}}</h2>
+        <img src={{item.imageURL}} />
+        <p>{{item.longDescription}}</p>
+    </div>
+</div>

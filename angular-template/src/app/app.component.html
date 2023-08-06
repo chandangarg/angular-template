@@ -1,0 +1,48 @@
+
+  <mat-sidenav-container fullscreen>
+
+    <mat-sidenav class="sidenav leftDrawer" #sidenav>
+        <mat-nav-list (click)="sidenav.close()">
+            <a class="closeSideNav" mat-list-item (click)="sidenav.close()">
+                <mat-icon>close</mat-icon>
+            </a>
+            <a mat-list-item routerLink="/">
+                <mat-icon>home</mat-icon>
+                <span>Home</span>
+            </a>
+            <a mat-list-item routerLink="about-us">
+                <mat-icon>medical_information</mat-icon>
+                <span>About Us</span>
+            </a>
+            <a mat-list-item routerLink="contact-us">
+                <mat-icon>map</mat-icon>
+                <span>Contact Us</span>
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-toolbar color="primary">
+        <button (click)="sidenav.open()" mat-icon-button class="menu-icon" aria-label="icon-button with menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>Courses</span>
+        <span class="spacer"></span>
+        <!-- <button mat-icon-button class="favorite-icon" aria-label="icon-button with heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="share-icon" aria-label="icon-button with share icon">
+          <mat-icon>share</mat-icon>
+        </button> -->
+      </mat-toolbar>
+
+      <router-outlet></router-outlet>
+
+      <div class="footer">
+          <div class="main-container">
+              <!-- <p><span>Made by </span><mat-icon>favorite</mat-icon></p> -->
+              <p>@ copyright reserved</p>
+          </div>
+      </div>
+  </mat-sidenav-container>
+
+
